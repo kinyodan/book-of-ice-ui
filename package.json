@@ -4,6 +4,9 @@
   "description": "Nuxt Black Dashboard",
   "author": "creativetim",
   "private": true,
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
