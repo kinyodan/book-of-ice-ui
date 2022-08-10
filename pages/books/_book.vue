@@ -121,15 +121,12 @@ export default {
       }
     },
     input(){
-      console.log("event capture")
     },
     sortData(isbn,sortParams){
       let param_index = this.filterParams.findIndex(i => i.name===sortParams)
-      console.log(param_index)
       if(param_index >= 0){
         this.sort_by = this.filterParams[param_index]
         this.loadCharacters()
-        console.log("sort data capture")
       }
     }
   }

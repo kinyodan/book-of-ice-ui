@@ -13,7 +13,10 @@
             <template #default="scope">
               <a :href="`books/${scope.row.isbn}?url=${scope.row.url}`">
               <div style="display: flex; align-items: center">
-                <span style="margin-left: 10px">{{scope.row.name}}</br><small>( {{scope.row.comments_count}} comments)</small></span>
+                <span style="margin-left: 10px">{{scope.row.name}}</br>
+                  <small v-if="scope.row.comments_count">( {{scope.row.comments_count}} comments)</small>
+                   <small v-else>( 0 comments)</small>
+                </span>
               </div>
               </a>
             </template>

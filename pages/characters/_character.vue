@@ -36,7 +36,6 @@ export default {
     async getCharacter(){
       let character = this.$route.params
       let character_url = this.$route.query
-      console.log(character.character)
       let data = {id: character.character, characterUrl: character_url.url}
       let response = await CharactersService.getCharacter(data)
       if (response.data.status){
@@ -47,9 +46,7 @@ export default {
     },
     async getSpouse(url) {
       if (url.length > 0) {
-        console.log(url)
         let response = await CharactersService.getSpouse(url)
-        console.log(response)
         if (response.data) {
           this.spouse = response.data
         }

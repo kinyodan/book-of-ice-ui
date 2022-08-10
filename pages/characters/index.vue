@@ -63,12 +63,8 @@ export default {
   },
   methods: {
     async getAllCharactersList() {
-      console.log("characters_list------------------")
-      this.characters_list=[]
-      console.log("characters_list------------------")
       let data = {sortBy: this.sort_by, filters: this.filters}
       let response = await CharactesService.getAllCharactersList(data)
-      console.log(response)
       if (response) {
         function sliceIntoChunks(arr, chunkSize) {
           const res = [];
@@ -91,11 +87,9 @@ export default {
     },
     sortData(sortParams) {
       let param_index = this.filterParams.findIndex(i => i.name === sortParams)
-      console.log(param_index)
       if (param_index >= 0) {
         this.sort_by = this.filterParams[param_index]
         this.getAllCharactersList()
-        console.log("sort data capture all characters")
       }
     },
     input(val){
