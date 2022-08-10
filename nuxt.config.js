@@ -90,8 +90,8 @@ export default {
   },
 
   env: {
-    APIURL: "http://localhost:6060",
-    SERVICE_APP_APIURL: "http://127.0.0.1:3002/",
+    APIURL: process.env.APIURL || "http://localhost:6060",
+    SERVICE_APP_APIURL: process.env.SERVICE_APP_APIURL || "http://127.0.0.1:3002/",
   },
 
   /*
