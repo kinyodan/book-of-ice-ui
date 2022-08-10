@@ -13,7 +13,7 @@
             <template #default="scope">
               <a :href="`books/${scope.row.isbn}?url=${scope.row.url}`">
               <div style="display: flex; align-items: center">
-                <span style="margin-left: 10px">{{scope.row.name}}</span>
+                <span style="margin-left: 10px">{{scope.row.name}}</br><small>( {{scope.row.comments_count}} comments)</small></span>
               </div>
               </a>
             </template>
@@ -83,7 +83,7 @@ export default {
    async getBooksList(){
       let response = await BooksService.getBooksList()
       if(response.data.status){
-        this.tableData = response.data.data
+        this.tableData = Object.values(response.data.data)
         this.loading=false
       }else{
         this.response_error = response.message

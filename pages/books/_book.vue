@@ -100,10 +100,7 @@ export default {
         this.characters_list = sliceIntoChunks(response.data.characterList.data, 10)
 
         //set the years metadata
-        let duration = response.data.characterList.metadata.total_age
-        let age_years = duration/12
-        let age_months = duration % 12
-        let total_age = `${Math.floor(age_years)}.${age_months} years`
+        let total_age = response.data.characterList.metadata.total_age
         this.metadata = {total_age: total_age,total_characters: response.data.characterList.metadata.total_characters}
 
         //stop loading

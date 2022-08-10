@@ -14,6 +14,14 @@
           }"
         >
         </sidebar-item>
+        <sidebar-item
+            :link="{
+            name: $t('sidebar.characters'),
+            icon: 'tim-icons icon-notes',
+            path: '/characters'
+          }"
+        >
+        </sidebar-item>
       </template>
     </side-bar>
 

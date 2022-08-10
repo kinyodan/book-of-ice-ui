@@ -1,6 +1,6 @@
 <template>
   <card>
-    <span v-if="setBooksDetails">--{{books}}</span>
+    <span v-if="setBooksDetails"></span>
     <span v-if="loading_character">
     <loading-panel></loading-panel>
     </span>

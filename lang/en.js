@@ -3,6 +3,7 @@ module.exports = {
     "title": "Books are US",
     "shortTitle": "CT",
     "dashboard": "Home",
+    "characters": "Characters",
     "pages": "Pages",
     "pricing": "Pricing",
     "rtl": "RTL Support",

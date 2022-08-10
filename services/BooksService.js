@@ -1,7 +1,7 @@
 import {apiPostClient, apiGetClient} from "./axios-config";
 
 export default {
-    getBooksList(data){
+    getBooksList(){
         return apiGetClient.get(`/books-list`)
     },
 

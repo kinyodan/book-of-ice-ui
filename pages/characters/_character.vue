@@ -43,16 +43,16 @@ export default {
         this.character_details = response.data.data
         this.getSpouse(this.character_details.spouse)
         // this.setBooks(this.character_details.books)
-
       }
     },
-    async getSpouse(url){
-      console.log(url)
-      let response = await CharactersService.getSpouse(url)
-      console.log(response)
-      console.log("spousespousespousespousespouse")
-      if (response.data){
-        this.spouse = response.data
+    async getSpouse(url) {
+      if (url.length > 0) {
+        console.log(url)
+        let response = await CharactersService.getSpouse(url)
+        console.log(response)
+        if (response.data) {
+          this.spouse = response.data
+        }
       }
     },
   }

@@ -17,4 +17,8 @@ export default {
         return apiGetClient.get(`${url}`)
     },
 
+    getAllCharactersList(data){
+        return apiGetClient.post(`/all-characters-list`, data)
+    }
+
 }

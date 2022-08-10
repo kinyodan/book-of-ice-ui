@@ -14,7 +14,7 @@ export default {
     },
 
     deleteComment(comment_id,formData){
-        return apiGetClient.post(`/update-comment/${comment_id}`,formData)
+        return apiGetClient.post(`/delete-comment/${comment_id}`,formData)
     },
 
     getIp(){
