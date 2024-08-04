@@ -1,9 +1,15 @@
 module.exports = {
   "sidebar": {
-    "title": "Books are US",
+    "title": "Binaura",
     "shortTitle": "CT",
     "dashboard": "Home",
+    "documentation": "Documentation",
+    "binaryTrading": "Binary trading",
     "characters": "Characters",
+    "coverPolicy": "cover policy reports",
+    "dailyReports": "Daily reports",
+    "paymentType":"Payment type Report",
+    "perAgent": "Agent Reports",
     "pages": "Pages",
     "pricing": "Pricing",
     "rtl": "RTL Support",

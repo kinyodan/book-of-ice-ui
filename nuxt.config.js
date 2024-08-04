@@ -19,7 +19,10 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Books R us',
+    title: 'Lumkani',
+    script: [
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' },
+    ],
     // meta: [
     //   { charset: 'utf-8' },
     //   { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -90,8 +93,8 @@ export default {
   },
 
   env: {
-    APIURL: process.env.APIURL || "http://localhost:6060",
-    SERVICE_APP_APIURL: process.env.SERVICE_APP_APIURL || "http://127.0.0.1:3002/",
+    APIURL: process.env.APIURL || "http://localhost:8000",
+    SERVICE_APP_APIURL: process.env.SERVICE_APP_APIURL || "http://127.0.0.1:8000/",
   },
 
   /*

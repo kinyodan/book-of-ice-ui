@@ -21,10 +21,10 @@
       </component>
     </slot>
     <ul
-      class="dropdown-menu"
+      class="dropdown-menu" style="max-height:400px; overflow:scroll; overflow-x: hidden;"
       :class="[
         { show: isOpen },
-        { 'dropdown-menu-right': menuOnRight },
+        { 'dropdown-menu-left': menuOnRight },
         menuClasses
       ]"
     >
